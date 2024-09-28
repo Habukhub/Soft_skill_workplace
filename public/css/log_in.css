@@ -1,0 +1,59 @@
+@import './root.css';
+.gradient-custom {
+    /* fallback for old browsers */
+    background: rgb(248, 237, 227);
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(255,245, 205), rgb(255, 207, 179));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgb(255, 207, 179), rgb(231, 143, 129))
+    }
+/* กำหนดให้ card มีขอบโค้ง */
+.login-card {
+    border-radius: 1rem;
+}
+
+/* เพิ่ม padding ให้กับ card-body */
+.login-card-body {
+    padding: 2rem;
+}
+
+/* จัดข้อความใน header ให้อยู่กลาง */
+.form-header {
+    text-align: center;
+}
+
+/* กำหนดระยะขอบสำหรับ label */
+.form-label {
+    margin-left: 0;
+}
+
+/* กำหนดให้ปุ่มมีสไตล์ที่เหมาะสม */
+.btn-outline-light {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* จัดการให้ลิงค์ Sign Up อยู่ตรงกลาง */
+.signup-link {
+    text-align: center;
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+    .form-card {
+        border-radius: 1rem;
+    }
+    
+    .card-body {
+        padding: 2rem; /* เพิ่ม padding ให้กับ card-body */
+    }
+    
+    .form-outline {
+        margin: 1rem 0; /* เพิ่ม margin ด้านบนและด้านล่างของฟอร์ม */
+    }
+    

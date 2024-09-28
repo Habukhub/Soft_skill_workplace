@@ -1,0 +1,25 @@
+<%- include('layout/navbar') %>
+
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card ">
+                <div class="card-header">
+                    <h3>Add Data
+                        <a href="/table" class="btn btn-dark float-end">Back</a>
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form action="/add" method="post" id="add-form">
+                        
+                        <%- include('./layout/formfield') %>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer') %>

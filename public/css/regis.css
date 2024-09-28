@@ -1,0 +1,58 @@
+@import './root.css';
+.gradient-custom {
+    /* fallback for old browsers */
+    background: rgb(248, 237, 227);
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(255,245, 205), rgb(255, 207, 179));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgb(255, 207, 179), rgb(231, 143, 129))
+    }
+
+/* ทำให้การ์ดมีขอบโค้งและพื้นหลังที่ปรับแต่งได้ */
+.form-card {
+    border-radius: 1rem;
+    background-color: #333; /* สีพื้นหลัง */
+}
+
+/* จัดข้อความให้อยู่ตรงกลางสำหรับส่วน header */
+.form-header {
+    text-align: center;
+}
+
+/* ปรับระยะขอบสำหรับ input */
+.form-label {
+    margin-left: 0;
+}
+
+/* กำหนดขนาดและสไตล์สำหรับฟอร์ม input */
+.form-control {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+/* ปรับแต่งปุ่ม */
+.btn-outline-light {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-card {
+    border-radius: 1rem;
+}
+
+.card-body {
+    padding: 2rem; /* เพิ่ม padding ให้กับ card-body */
+}
+
+.form-outline {
+    margin: 1rem 0; /* เพิ่ม margin ด้านบนและด้านล่างของฟอร์ม */
+}

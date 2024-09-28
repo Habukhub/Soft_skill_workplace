@@ -1,0 +1,46 @@
+@import './root.css';
+
+
+/* เพิ่มเงาให้กับแต่ละเซลล์ */
+.table-shadow td, .table-shadow th {
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+/* เพิ่มเงาให้กับตาราง */
+.table-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px; /* เพิ่มความมนให้กับขอบ */
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาภายในเกินขอบมน */
+}
+
+/* ทำให้มุมของแต่ละเซลล์กลม */
+.table-shadow td, .table-shadow th {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* สำหรับการทำให้ส่วนที่มีตาราง responsive ยังคงความมน */
+.table-rounded {
+    border-radius: 12px; /* ความมนที่ห่อรอบตารางทั้งหมด */
+    overflow: hidden;
+}
+
+/* ปรับขนาดฟอนต์และขนาดตารางให้เหมาะสมกับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px; /* ปรับขนาดฟอนต์สำหรับแท็บเล็ต */
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        font-size: 12px; /* ปรับขนาดฟอนต์สำหรับมือถือ */
+    }
+
+    /* ปรับขนาดไอคอนในมือถือ */
+    .fa-lg {
+        font-size: 1.2em;
+    }
+
+    .d-flex {
+        display: block; /* จัดเรียงปุ่มในแนวตั้งในหน้าจอเล็ก */
+    }
+}
