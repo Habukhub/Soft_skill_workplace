@@ -4,14 +4,20 @@
 <div class="container">
     <div class="row my-4">
         <div class="col-lg-12 mt-5 ">
+            <% if(player){ %>
+                <a href="/logout" class="logout" >Logout</a>
+            <% } %>
             <div class="table-responsive table-rounded">
                 <table class="table table-striped text-center table-rounded table-shadow">
                     <thead>
                         <tr class="table-dark">
                             <th>Name</th>
                             <th>Place</th>
+                            <th>Roles</th>
                             <th>Contact</th>
-                            <th>Edit</th>
+                            <% if(player){ %>
+                                <th>Edit</th>
+                            <% } %>
                         </tr>
                     </thead>
                     <% users.forEach(user => { %>
@@ -19,13 +25,16 @@
                         <tr>
                             <td><%= user.name %></td>
                             <td><%= user.place %></td>
+                            <td><%= user.roles %></td>
                             <td><%= user.contact %></td>
+                            <% if(player){ %>
                             <td class="d-flex justify-content-center">
                                 <a href="/edit/<%= user.id %>" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
                                 <form action="/table/<%= user.id %>" method="get">
                                     <button type="submit" class="text-danger border-0"><i class="fas fa-trash fa-lg mx-1"></i></button>
                                 </form>
                             </td>
+                            <% } %>
                         </tr>
                     </tbody>
                     <% }) %>

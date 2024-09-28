@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
+    roles:{
+        type: String,
+        require: true,
+    },
     contact:{
         type: String,
         require: true,
