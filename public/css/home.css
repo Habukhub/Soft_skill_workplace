@@ -61,27 +61,6 @@
   max-width: 400px;
 }
 
-/* .container1 .btn {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    background-color: rgba(50, 70, 70, 0.4);
-    border: solid var(--white);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .container1 .btn:hover {   
-    background-color: rgba(0, 255, 255, 0.4);
-  } */
-
-/* CSS */
 .container1 .btn {
   position: absolute;
   top: 85%;
@@ -131,4 +110,93 @@
 .container1 .btn:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with width 1024px or less */
+@media (max-width: 1024px) {
+  .text-box1 h1 {
+    font-size: 48px;
+  }
+
+  .container1 .btn {
+    font-size: 24px;
+  }
+}
+
+/* For devices with width 768px or less */
+@media (max-width: 768px) {
+  .text-box1 h1 {
+    font-size: 40px;
+  }
+
+  .text-box2 h2 {
+    font-size: 18px;
+  }
+
+  .container1 .btn {
+    font-size: 22px;
+  }
+}
+
+/* For devices with width 480px or less */
+@media (max-width: 480px) {
+  .text-box1 {
+    top: 25%;
+  }
+
+  .text-box1 h1 {
+    font-size: 32px;
+  }
+
+  .text-box2 {
+    top: 55%;
+  }
+
+  .text-box2 h2 {
+    font-size: 16px;
+  }
+
+  .container1 .btn {
+    font-size: 20px;
+  }
+}
+
+/* For devices with width 425px or less */
+@media (max-width: 425px) {
+  .text-box1 {
+    top: 20%;
+  }
+
+  .text-box1 h1 {
+    font-size: 28px;
+  }
+
+  .text-box2 {
+    top: 50%;
+  }
+
+  .text-box2 h2 {
+    font-size: 14px;
+  }
+
+  .container1 .btn {
+    font-size: 18px;
+  }
+}
+
+/* For devices with width 320px or less */
+@media (max-width: 320px) {
+  .text-box1 h1 {
+    font-size: 24px;
+  }
+
+  .text-box2 h2 {
+    font-size: 12px;
+  }
+
+  .container1 .btn {
+    font-size: 16px;
+  }
 }
