@@ -84,9 +84,12 @@ router.post('/table', async (req, res) => {
     }
 });
 
-// Shoe table that has been traded
+// Show table that has been traded
 router.get('/table', async (req, res) => {
-    const users = await User.find();
+    const search = req.query.name || "";
+    const usersearch = await User.find({name: {$regex: search, $options: "i"}});
+    const userAll = await User.find({ });
+    const users = search == ""?userAll: usersearch;
     res.render("table", {title: "Table data", users: users});
     
 });

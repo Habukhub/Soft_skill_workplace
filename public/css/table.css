@@ -1,8 +1,6 @@
 @import './root.css';
 
-.container{
-    margin-top: 50px;
-}
+
 
 /* เพิ่มเงาให้กับแต่ละเซลล์ */
 .table-shadow td, .table-shadow th {
