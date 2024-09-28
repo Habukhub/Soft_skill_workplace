@@ -18,7 +18,7 @@ connectDB(process.env.MONGODB_URI);
 
 //milddleware
 app.use(cookieParser());
-
+app.set('views', (path.join(__dirname, 'views')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
