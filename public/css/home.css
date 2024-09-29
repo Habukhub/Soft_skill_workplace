@@ -12,7 +12,7 @@
 }
 
 .text-box1 {
-  width: 300px;
+  width: 500px;
   background-color: rgba(50, 70, 70, 0.4);
   backdrop-filter: blur(5px);
   box-shadow: 20px 10px rgba(5, 62, 82, 0.749);
@@ -27,7 +27,7 @@
 }
 
 .text-box2 {
-  width: 300px;
+  width: 500px;
   background-color: rgba(50, 70, 70, 0.4);
   backdrop-filter: blur(5px);
   box-shadow: 20px 10px rgba(5, 62, 82, 0.749);
@@ -122,12 +122,16 @@
   }
 
   .container1 .btn {
+    top: 90%;
     font-size: 24px;
   }
 }
 
 /* For devices with width 768px or less */
 @media (max-width: 768px) {
+  .text-box1,.text-box2{
+    width: 400px;
+  }
   .text-box1 h1 { 
     font-size: 40px;
   }
@@ -143,19 +147,15 @@
 
 /* For devices with width 480px or less */
 @media (max-width: 480px) {
+  .text-box1,.text-box2{
+    width: 280px;
+  }
   .content { 
     margin-top: 150px; 
-  }
-  .text-box1 {
-    top: 25%;
   }
 
   .text-box1 h1 {
     font-size: 32px;
-  }
-
-  .text-box2 {
-    top: 55%;
   }
 
   .text-box2 h2 {
@@ -169,19 +169,15 @@
 
 /* For devices with width 425px or less */
 @media (max-width: 425px) {
+  .text-box1,.text-box2{
+    width: 280px;
+  }
   .content { 
     margin-top: 200px; 
   }
-  .text-box1 {
-    top: 20%;
-  }
-
+  
   .text-box1 h1 {
     font-size: 28px;
-  }
-
-  .text-box2 {
-    top: 50%;
   }
 
   .text-box2 h2 {
@@ -195,6 +191,9 @@
 
 /* For devices with width 320px or less */
 @media (max-width: 320px) {
+  .text-box1,.text-box2{
+    width: 200px;
+  }
   .content { 
     margin-top: 250px; 
   }
