@@ -33,6 +33,7 @@
     .navbar-brand img {
       height: 50px; /* ขนาดสำหรับแท็บเล็ต */
     }
+   
   }
 
   @media (max-width: 480px) {
