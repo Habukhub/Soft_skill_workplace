@@ -60,12 +60,12 @@
 .container1 {
   width: 100%;
   max-width: 400px;
+  margin-left:50% ;
 }
 
 .container1 .btn {
-  position: absolute;
-  top: 85%;
-  left: 50%;
+  position: relative;
+  margin-top: 65%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   font-size: 30px;
